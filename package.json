@@ -1,0 +1,42 @@
+{
+  "name": "empa-prototype",
+  "version": "1.0.0",
+  "description": "Enterprise Multi Purpose Agent - AI-powered multimodal analysis and document Q&A system",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:migrate": "node scripts/migrate.js",
+    "db:setup": "bash scripts/setup-postgres.sh",
+    "db:reset": "node scripts/reset-db.js",
+    "test:connection": "node scripts/test-connection.js"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "next": "^15.0.0",
+    "openai": "^4.28.0",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^3.11.174",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.3.0",
+    "typescript": "^5.3.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/pg": "^8.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.17",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.9",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  }
+}
