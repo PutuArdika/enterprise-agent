@@ -26,16 +26,24 @@ export function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    pathname === link.href
-                      ? "bg-blue-100 text-blue-600"
-                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                  }`}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${pathname === link.href
+                    ? "bg-blue-100 text-blue-600"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                    }`}
                 >
                   <span className="mr-2">{link.icon}</span>
                   {link.label}
                 </Link>
               ))}
+              <a
+                href="https://interview-tool-cnjcmejswvgszxxse7qrjj.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+              >
+                <span className="mr-2">🤖</span>
+                Interview Bot
+              </a>
             </div>
           </div>
         </div>
